@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="forms" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form method="post" action="/cgi-bin/post-query">
+
+        <!--text: Caixa para inserir um texto-->
+        Qual o seu primeiro nome?
+        <input type="text" NAME="primeiro_nome" VALUE="Josilei"><br><br>
+
+        <!--password: Caixa para inserir uma senha, este transforma todos os caracteres-->
+        Informe sua senha de acesso (8 caracteres):
+        <input type="password" NAME="sua_senha" VALUE="" SIZE="8", MAXLENGTH="8"><br><br>
+
+        <!--hidden: Oculta as informações-->
+        Você não pode visualizar nada aqui embaixo.
+        <input type="hidden" NAME="nome_oculto" VALUE="form12"><br><br>
+
+        <!--textarea: Uma área de texto grande-->
+        Por favor, escreva aqui suas sugestões, dúvidas e críticas:<br><br>
+        <textarea name="criticas" rows="3" cols="40">
+Gostaria de obter mais informações sobre
+este servidor. Grato.
+        </textarea><br><br>
+
+        <!--select/option: Traz uma lista "drop-down" com itens-->
+        Onde você pretende fazer turismo nas férias?
+        <select name="lugares_para_ver">
+            <option>Fortaleza</option>
+            <option value="sul">Floripa ou Porto Alegre</option>
+            <option>Rio de Janeiro</option>
+            <option selected>Brasilia</option>
+            <option value="amazonia">Manaus</option>
+            <option>Sua cama</option>
+        </select><br><br>
+
+        Que facilidades de acomodação você deseja?<br>
+        <select name="opcional" multiple size="5">
+            <option>Televisão</option>
+            <option value="casal" selected>Cama de Casal</option>
+            <option>Ar Condicionado</option>
+            <option>Fax</option>
+            <option selected>Modem V.34</option>
+            <option>Sauna</option>
+            <option>Lavandeira</option>
+            <option>Frigo-Bar</option>
+        </select><br><br>
+
+        <!--checkbox: Seleciona e carrega um valor-->
+        <input type="checkbox" name="vehicle1" value="Bike"/> I have a bike<br>
+        <input type="checkbox" name="vehicle2" value="Car"/> I have a car<br>
+        <input type="checkbox" name="vehicle3" value="Boat" checked/> I have a boat<br><br>
+        <input type="submit" name="Submit"/>
+
+    </form>
+</body>
+</html>
